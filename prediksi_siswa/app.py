@@ -4,7 +4,7 @@ import joblib
 from sklearn.preprocessing import LabelEncoder
 
 # Load model
-model = joblib.load("model_prediksi.pkl")
+model = joblib.load("prediksi_siswa/model_prediksi.pkl")
 
 # Proses fitur
 def process_input(df):
