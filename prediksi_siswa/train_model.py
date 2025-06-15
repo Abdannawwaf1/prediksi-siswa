@@ -41,7 +41,8 @@ if cv_split < 2:
 
 # GridSearchCV untuk model terbaik
 grid = GridSearchCV(
-    RandomForestClassifier(random_state=42),
+    # RandomForestClassifier(random_state=42),
+    RandomForestClassifier(random_state=42, class_weight='balanced'),
     param_grid,
     cv=cv_split,
     scoring='accuracy',
